@@ -1,0 +1,12 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.help ul li {
+	font-size: 18px;
+}
+.help{
+	margin-left: 80px;
+}

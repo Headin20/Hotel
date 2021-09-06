@@ -1,0 +1,186 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+header{
+	margin: 0 auto;
+	width: 100%;
+	min-width: 700px;
+	background-color: rgb(196, 134, 61);
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+ul, li{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+.control{
+	width: 100%;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	padding-top: 15px;
+}
+.help img {
+	height: 50px;
+	margin-left: 120px;
+}
+.logo{
+	height: 90px;
+	margin-left: 70px;
+	margin-bottom: 12px;
+}
+.navig{
+	display: flex;
+	margin-left: 220px;
+}
+
+.navig li{
+	margin-left: 50px;
+}
+
+.navig li a{
+	font-size: 24px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.navig li a:hover{
+	background-color: #fff;
+	color:  rgb(196, 134, 61);
+	border: 2px double rgb(196, 134, 61);
+	border-radius: 10px;
+	padding: 8px;
+	transition: .5s;
+}
+.navig li a.active{
+	border-bottom: 1px solid #fff;
+}
+
+
+.intro{
+	height: 600px;
+	text-align: center;
+}
+.intro img{
+	width: 100%;
+	height: 600px;
+}
+.playsholder{
+	margin-top: -100px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 46px;
+}
+
+.date{
+	width: 100%;
+	min-width: 700px;
+	margin-top: -45px;
+	text-align: center;
+	background-color: rgb(196, 134, 61);
+	box-shadow: 0 0 10px 0 #7e5b32;
+}
+.text_brn{
+	font-size: 24px;
+}
+.span{
+	margin-left: 50px;
+}
+.conteiner_date{	
+	margin: 45px auto 0 auto;
+	width: 70%;
+	height: 105px;
+	display: flex;
+	align-items: center;
+}
+.Date{
+	width: 162px;
+	height: 17px;
+	font-size: 20px;
+	background-color: transparent; 
+	border: 2px solid #000;
+	padding: 8px;
+	margin-top: 5px;
+}
+.Date:hover{
+	cursor: pointer;
+}
+.serch{
+	background-color:#de5555;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	width: 162px;
+	height: 37px;
+	color: #fff;
+	padding: auto;
+	font-size: 22px;
+	margin-top: 30px;
+	margin-left: 20px; 
+}
+.serch:hover{
+	background-color:#b44141;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.position{
+	width: 150px;
+	height: 30px;
+	margin-right: 20px;
+	background-color:  rgb(196, 134, 61);
+	text-align: center;
+}
+.position:hover{
+	background-color: #7e5b32;
+	transition: 0.5s;
+}
+.position a{
+	color: #fff;
+	font-size: 20px;
+}
+.position.active{
+	background-color: #666;
+}
+.position.active:hover{
+	background-color: #7e5b32;
+	transition: 0.5s;
+}
+
+.to_book button{
+	background-color:rgb(196, 134, 61);
+	padding: 10px;
+	width: 220px;
+	font-size: 20px;
+	color: #fff; 
+	border: 1px solid rgb(196, 134, 61);
+}
+.to_book button:hover{
+	color: #7e5b32;
+	background-color: #fff;
+	transition: .5s;
+	border: 2px solid #7e5b32;
+}
+.list{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.list li{
+	margin: 5px;
+	font-size: 20px;
+	color: #222;
+}
+.list li:before{
+    content: "";
+    left: 0;
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    background: url(../img/li.png) left top no-repeat;
+    background-size: 10px 16px;
+}

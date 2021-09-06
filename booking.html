@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<meta charset="utf-8">
+	<meta name="description" content="Строительная компания 'Хороший Дом'"> 
+	<meta name="Keywords" content="Дом, котедж, постройка с нуля, Хороший Дом">
+
+	<title>Бронирование</title>
+	<link rel="stylesheet" type="text/css" href="css/main-booking.css">
+	<link rel="stylesheet" type="text/css" href="css/norm.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<div class="control">
+			<img src="img/logo.jpg" alt="логотип" class="logo">				
+			</img>
+				
+			<ul class="navig">
+				<li>
+					<a href="home.html">Главная</a>
+				</li>
+				<li>
+					<a class="active" href="rooms.html">Номера</a>
+				</li>
+				<li>
+					<a  href="#">Ресторан</a>
+				</li>
+				<li>
+					<a  href="#">Мероприятия</a>
+				</li>
+				<li>
+					<a  href="#">СПА</a>
+				</li>
+				<li>
+					<a  href="#">Контакты</a>
+				</li>					
+			</ul>
+		</div>
+	</header>
+
+	<div class="intro">
+		<img src="img/room_intro.png">
+		<div class="playsholder">Бронирование</div>
+	</div>
+
+	<div class="date">
+		<div class="conteiner_date">			
+			<div class="span">
+				<div class="text_brn" style="margin-top: 5px;" ><strong>Бронирование номеров</strong></div>
+				<div class="text_brn" style="margin-top: 5px;"><span>Гарантия заселения</span></div>			
+			</div>
+			<div class="span">
+				<div style="font-size: 24px; font-weight: 600;">Дата заезда</div>
+				<input class="Date" type="date" value ="2020-11-18" id="fday" placeholder="Дата заезда">
+			</div>
+			<div class="span">
+				<div style="font-size: 24px; font-weight: 600;">Дата выезда</div>
+				<input class="Date" type="date" value ="2020-11-19" id="lday" placeholder=" Дата выезда ">
+			</div>
+			<div class="span">				
+				<button class="serch" onclick="ok()">Изменить дни</button>
+			</div>
+		</div>
+	</div>
+
+	<div style="width: 1080px; margin: 0 auto;">
+		<div style="display: flex;">
+			<div class="position">
+				<a href="home.html">Отель</a>
+			</div>
+			<div class="position active">
+				<a href="#">Бронирование</a>
+			</div>
+		</div>
+	</div>
+
+	<div style="width: 1080px; margin: 30px auto 0 auto; box-shadow: 0 0 15px 0 #000; display: none;" id="eco">
+		<div  class="booking">
+			<div style="display: flex;">
+				<div>
+					<img src="img/room_standart.jpg" class="icon">
+				</div>
+
+				<div style="margin-left: 20px;">
+					<div style="font-size: 30px; color: #333;">
+						Эконом
+					</div>
+					<div style="font-size: 20px; color: #333;">
+						Однокомнатный номер площадью 16 м2, состоящий из просторной спальни и ванной комнаты. Все номера категории Эконом расположены на мансардном этаже, что придает им особую атмосферу уюта
+					</div>
+					<div style="text-align: right; margin-top: 30px;">
+						<a href="#" style=" color:  rgb(196, 134, 61); border-bottom: 1px solid rgb(196, 134, 61);">Подробней</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<hr>
+				<div style="display: flex;">
+					<div style="font-size: 20px;">
+						Бесплатная отмена брони
+					</div>
+					<div style="margin-left: auto; text-align: right;">
+						<div style="margin-bottom: 30px;" >
+							<div class="prise">За 1 ночь цена:<div id="day_eco">550</div></div>
+							
+							<button class="pay"><img src="img/kisspng_payment_invoice_computer_icons_bank_account_payment_5abf3f98c89cf4.png" style="height: 32px;"></button>
+						</div>
+						<div>
+							<div class="prise">Полная стоимость проживания</div>
+							<div class="prise" id="sum_eco">550</div>
+							<button class="pay"><img src="img/kisspng_payment_invoice_computer_icons_bank_account_payment_5abf3f98c89cf4.png" style="height: 32px;"></button>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div style="width: 1080px; margin: 30px auto 0 auto; box-shadow: 0 0 15px 0 #000;" id="stn">
+		<div  class="booking">
+			<div style="display: flex;">
+				<div>
+					<img src="img/room_standart.jpg" class="icon">
+				</div>
+
+				<div style="margin-left: 20px;">
+					<div style="font-size: 30px; color: #333;">
+						Стандарт
+					</div>
+					<div style="font-size: 20px; color: #333;">
+						Номер площадью от 25 м2, состоящий из широкой прихожей, спальни и ванной комнаты.
+					</div>
+					<div style="text-align: right; margin-top: 30px;">
+						<a href="standart.html" style=" color:  rgb(196, 134, 61); border-bottom: 1px solid rgb(196, 134, 61);">Подробней</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<hr>
+				<div style="display: flex;">
+					<div style="font-size: 20px;">
+						Бесплатная отмена брони
+					</div>
+					<div style="margin-left: auto; text-align: right;">
+						<div style="margin-bottom: 30px;" >
+							<div class="prise">За 1 ночь цена:<div id="day_stn">750</div></div>
+							
+							<button class="pay"><img src="img/kisspng_payment_invoice_computer_icons_bank_account_payment_5abf3f98c89cf4.png" style="height: 32px;"></button>
+						</div>
+						<div>
+							<div class="prise">Полная стоимость проживания</div>
+							<div class="prise" id="sum_stn">750</div>
+							<button class="pay"><img src="img/kisspng_payment_invoice_computer_icons_bank_account_payment_5abf3f98c89cf4.png" style="height: 32px;"></button>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div style="width: 1080px; margin: 30px auto 0 auto; box-shadow: 0 0 15px 0 #000; display: none;" id="polulucs">
+		<div  class="booking">
+			<div style="display: flex;">
+				<div>
+					<img src="img/room_standart.jpg" class="icon">
+				</div>
+
+				<div style="margin-left: 20px;">
+					<div style="font-size: 30px; color: #333;">
+						Полулюкс
+					</div>
+					<div style="font-size: 20px; color: #333;">
+						Элегантный двухкомнатный номер площадью 35 м2. Все номера оформлены в пастельной цветовой гамме и состоят из широкой прихожей, гостиной, спальни и ванной комнаты
+					</div>
+					<div style="text-align: right; margin-top: 30px;">
+						<a href="#" style=" color:  rgb(196, 134, 61); border-bottom: 1px solid rgb(196, 134, 61);">Подробней</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<hr>
+				<div style="display: flex;">
+					<div style="font-size: 20px;">
+						Бесплатная отмена брони
+					</div>
+					<div style="margin-left: auto; text-align: right;">
+						<div style="margin-bottom: 30px;" >
+							<div class="prise">За 1 ночь цена:<div id="day_polulucs">950</div></div>
+							
+							<button class="pay"><img src="img/kisspng_payment_invoice_computer_icons_bank_account_payment_5abf3f98c89cf4.png" style="height: 32px;"></button>
+						</div>
+						<div>
+							<div class="prise">Полная стоимость проживания</div>
+							<div class="prise" id="sum_polulucs">950</div>
+							<button class="pay"><img src="img/kisspng_payment_invoice_computer_icons_bank_account_payment_5abf3f98c89cf4.png" style="height: 32px;"></button>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div style="width: 1080px; margin: 30px auto 0 auto; box-shadow: 0 0 15px 0 #000; display: none;" id="lucs">
+		<div  class="booking">
+			<div style="display: flex;">
+				<div>
+					<img src="img/room_standart.jpg" class="icon">
+				</div>
+
+				<div style="margin-left: 20px;">
+					<div style="font-size: 30px; color: #333;">
+						Люкс
+					</div>
+					<div style="font-size: 20px; color: #333;">
+						Двухкомнатный номер площадью 36 м2, включающий в себя прихожую, спальню, кухню-студию и ванную комнату. Всего в отельном комплексе 102 номера данной категории..
+					</div>
+					<div style="text-align: right; margin-top: 30px;">
+						<a href="#" style=" color:  rgb(196, 134, 61); border-bottom: 1px solid rgb(196, 134, 61);">Подробней</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<hr>
+				<div style="display: flex;">
+					<div style="font-size: 20px;">
+						Бесплатная отмена брони
+					</div>
+					<div style="margin-left: auto; text-align: right;">
+						<div style="margin-bottom: 30px;" >
+							<div class="prise">За 1 ночь цена:<div id="day_lucs">1450</div></div>
+							
+							<button class="pay"><img src="img/kisspng_payment_invoice_computer_icons_bank_account_payment_5abf3f98c89cf4.png" style="height: 32px;"></button>
+						</div>
+						<div>
+							<div class="prise">Полная стоимость проживания</div>
+							<div class="prise" id="sum_lucs">1450</div>
+							<button class="pay"><img src="img/kisspng_payment_invoice_computer_icons_bank_account_payment_5abf3f98c89cf4.png" style="height: 32px;"></button>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div style="width: 1080px; margin: 30px auto 0 auto; box-shadow: 0 0 15px 0 #000; display: none;" id="prez">
+		<div  class="booking">
+			<div style="display: flex;">
+				<div>
+					<img src="img/room_standart.jpg" class="icon">
+				</div>
+
+				<div style="margin-left: 20px;">
+					<div style="font-size: 30px; color: #333;">
+						Президентский
+					</div>
+					<div style="font-size: 20px; color: #333;">
+						Трехкомнатный номер площадью 50 м2 единственный в данной категории. Это самый просторный из всех наших номеров..
+					</div>
+					<div style="text-align: right; margin-top: 30px;">
+						<a href="#" style=" color:  rgb(196, 134, 61); border-bottom: 1px solid rgb(196, 134, 61);">Подробней</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<hr>
+				<div style="display: flex;">
+					<div style="font-size: 20px;">
+						Бесплатная отмена брони
+					</div>
+					<div style="margin-left: auto; text-align: right;">
+						<div style="margin-bottom: 30px;" >
+							<div class="prise">За 1 ночь цена:<div id="day_prez">2750</div></div>
+							
+							<button class="pay"><img src="img/kisspng_payment_invoice_computer_icons_bank_account_payment_5abf3f98c89cf4.png" style="height: 32px;"></button>
+						</div>
+						<div>
+							<div class="prise">Полная стоимость проживания</div>
+							<div class="prise" id="sum_prez">2750</div>
+							<button class="pay"><img src="img/kisspng_payment_invoice_computer_icons_bank_account_payment_5abf3f98c89cf4.png" style="height: 32px;"></button>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div style="width: 1080px; margin: 30px auto">
+		<button style="background-color: #de5555; color: #fff;" onclick="toggle_show('eco', 'polulucs', 'lucs', 'prez')">Показать все доступные варианты</button>
+	</div>
+
+	<script src="script.js"></script>  
+</body>
+</html>
